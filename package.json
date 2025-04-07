@@ -12,22 +12,18 @@
 		"seed": "ts-node prisma/seed.ts"
 	},
 	"dependencies": {
-		"@prisma/client": "^6.5.0",
 		"axios": "^1.8.4",
 		"next": "15.2.4",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
-		"@faker-js/faker": "^9.6.0",
 		"@gravity-ui/uikit": "^7.9.0",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
-		"prisma": "^6.5.0",
 		"tailwindcss": "^4",
-		"ts-node": "^10.9.2",
 		"typescript": "^5"
 	}
 }
