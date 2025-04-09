@@ -1,0 +1,22 @@
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    input,
+    button,
+    select,
+    textarea,
+    hr {
+        background: none;
+        border: none;
+        outline: none
+    }
+}
