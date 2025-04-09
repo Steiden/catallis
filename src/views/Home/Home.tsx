@@ -27,7 +27,7 @@ export const Home = () => {
 					alt="background image"
 					width={1360}
 					height={680}
-					className="absolute inset-0 z-[-1] h-full object-cover bg-[linear-gradient(270deg, #111111 18.24%, rgba(7, 16, 22, 0) 96.76%)]"
+					className="absolute inset-0 z-[-1] h-full w-full object-cover bg-[linear-gradient(270deg, #111111 18.24%, rgba(7, 16, 22, 0) 96.76%)]"
 				/>
 				<Header />
 				<hr className="w-full h-[1px] bg-[#282828]" />
