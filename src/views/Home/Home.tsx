@@ -20,7 +20,7 @@ export const Home = () => {
 	}, []);
 
 	return (
-		<section>
+		<section className="flex flex-col gap-4">
 			<div className="flex flex-col px-20 py-10 relative rounded-[32px] overflow-hidden h-[680px]">
 				<Image
 					src="/images/bg.png"
@@ -38,6 +38,12 @@ export const Home = () => {
 						<Button variant="flat">Консультация</Button>
 					</div>
 				</div>
+			</div>
+
+			<div className="grid grid-cols-3 gap-4">
+				{products?.map((product) => (
+					<ProductCard product={product} key={product.id} />
+				))}
 			</div>
 		</section>
 	);
