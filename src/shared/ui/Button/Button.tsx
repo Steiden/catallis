@@ -1,12 +1,13 @@
 import { FC, HTMLAttributes } from "react";
+import styles from "./Button.module.css";
 
 export type ButtonVariants = "solid" | "flat";
 
-export const ButtonDefaultStyle = "cursor-pointer flex items-center justify-center w-fit rounded-[16px] border-[2px] text-white text-[18px] font-semibold h-[60px] px-12 py-4";
+export const ButtonDefaultStyle = styles["button"];
 
 export const ButtonStyles: Record<ButtonVariants, string> = {
-	solid: "border-transparent bg-[#FF001D]",
-	flat: "border-[#464747]",
+	solid: styles["button--solid"],
+	flat: styles["button--flat"],
 };
 
 type Props = HTMLAttributes<HTMLButtonElement> & {

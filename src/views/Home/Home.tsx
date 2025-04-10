@@ -7,6 +7,7 @@ import { Header } from "@/shared/ui/Header/Header";
 import { ProductCard } from "@/widgets/ProductCard/ProductCard";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import styles from "./Home.module.css";
 
 export const Home = () => {
 	const [products, setProducts] = useState<Product[]>([]);
@@ -20,27 +21,21 @@ export const Home = () => {
 	}, []);
 
 	return (
-		<section className="flex flex-col gap-4">
-			<div className="flex flex-col px-20 py-10 relative rounded-[32px] overflow-hidden h-[680px]">
-				<Image
-					src="/images/bg.png"
-					alt="background image"
-					width={1360}
-					height={680}
-					className="absolute inset-0 z-[-1] h-full w-full object-cover bg-[linear-gradient(270deg, #111111 18.24%, rgba(7, 16, 22, 0) 96.76%)]"
-				/>
+		<section className={styles["home"]}>
+			<div className={styles["home__banner"]}>
+				<Image src="/images/bg.png" alt="background image" width={1360} height={680} className={styles["home__banner-background"]} />
 				<Header />
-				<hr className="w-full h-[1px] bg-[#282828]" />
-				<div className="h-full flex justify-center flex-col grow-1">
-					<h1 className="text-white text-[64px]/[1.1] font-medium w-[612px]">Премиальное обслуживание вашего автомобиля</h1>
-					<div className="flex items-center gap-4 mt-9">
+				<hr className={styles["home__banner-divider"]} />
+				<div className={styles["home__banner-content"]}>
+					<h1 className={styles["home__title"]}>Премиальное обслуживание вашего автомобиля</h1>
+					<div className={styles["home__banner-actions"]}>
 						<Button variant="solid">Запись в сервис</Button>
 						<Button variant="flat">Консультация</Button>
 					</div>
 				</div>
 			</div>
 
-			<div className="grid grid-cols-3 gap-4">
+			<div className={styles["home__list"]}>
 				{products?.map((product) => (
 					<ProductCard product={product} key={product.id} />
 				))}

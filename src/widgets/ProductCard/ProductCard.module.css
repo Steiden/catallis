@@ -1,0 +1,58 @@
+/* trasnform styles from tailwind to css */
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 32px;
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    height: 244px;
+}
+
+.product-card__title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+}
+
+.product-card__description {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #fff;
+    z-index: 1;
+}
+
+.product-card__price {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.product-card__promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    border-radius: 40px;
+    background-color: #FF001D;
+    padding: 2px 9px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 9%;
+}
+
+.product-card__img {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

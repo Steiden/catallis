@@ -1,0 +1,25 @@
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 60px;
+    padding: 12px 24px;
+}
+
+.button--solid {
+    background-color: #FF001D;
+    border-color: transparent;
+}
+
+.button--flat {
+    background-color: transparent;
+    border-color: #464747;
+}
